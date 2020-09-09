@@ -5,35 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wechat Chat Interface</title>
 
-    <link type="text/css" rel="stylesheet" href="css/style.css" />
-    <script type="text/javascript" src="js/main.js"></script>
+    <link type="text/css" rel="stylesheet" href="static/css/style.css" />
+    <script type="text/javascript" src="static/js/main.js"></script>
 </head>
 <body>
-    <div className="WechatRecordGroup">
-        <img className="model" src={iPhoneModel} />
+    <div class="WechatRecordGroup">
+        <img class="model" src="img/iphone11-model.png" />
 
-        <div className="name">
-            🍬🍦
+        <div class="name">
+            <p class="blank"></p>
+            <p>🍬🍦</p>
         </div>
 
-        <div id="wechat-record-container" className="wechat-record-container">
-            <div className="gap"></div>
+        <div id="wechat-record-container" class="wechat-record-container">
+            <div class="gap"></div>
 
-            <div className="time">2020年8月11日</div>
+            <div class="time">2020年8月11日</div>
 
-            <div className="info-group yoyo">
-                <img className="avatar" src={YoyoAvatar} alt="yoyo avatar" />
-                <div className="bubble">
+            <div class="info-group left-person">
+                <img class="avatar" src="img/left-person-avatar.jpg" alt="left person avatar" />
+                <div class="bubble">
                     我来测试一下如果我发了很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长的一段话会是什么效果
                 </div>
             </div>
     
-            <div className="info-group zz">
-                <div className="bubble">
+            <div class="info-group right-person">
+                <div class="bubble">
                     我来测试一下如果我发了很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长的一段话会是什么效果
                 </div>
-                <img className="avatar" src={zzAvatar} alt="yoyo avatar" />
+                <img class="avatar" src="img/right-person-avatar.jpg" alt="right person avatar" />
             </div>
+
+            
         </div>
 </body>
 </html>

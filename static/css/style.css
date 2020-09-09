@@ -1,25 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-}
 
-.WechatRecord {
+    min-height: 100vh;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
-}
-
-.WechatRecord .SectionCaption {
-    margin: 0 50px 40px auto;
-}
-
-.WechatRecord .SectionCaptionGroup h2 label {
-    /* background: linear-gradient(104deg, #736EFE 0%, #5EFCE8 100%); */
-    background-image: linear-gradient( 135deg, #5961F9 10%, #EE9AE5 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    justify-content: center;
 }
 
 .WechatRecordGroup {
@@ -28,8 +14,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    margin-right: 20%;
 }
 
 .WechatRecordGroup .model {
@@ -38,7 +22,6 @@ body {
     pointer-events: none;
 }
 
-
 .WechatRecordGroup .name {
     position: absolute;
     top: 20px;
@@ -46,11 +29,18 @@ body {
     width: 94%;
     height: 8.47%;
     z-index: 2;
-    line-height: 85px; /* 这个还没自动适配手机尺寸 300px->70px 350px->85px  400px->100px*/
     text-align: center;
 
     background-color: rgba(236,237,238, 0.8);
-    backdrop-filter: blur(10px);    /* 半透明 */
+    backdrop-filter: blur(10px);
+
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    align-items: flex-end;
+}
+
+.WechatRecordGroup .name p {
+    margin: 0;
 }
 
 .WechatRecordGroup .wechat-record-container {
@@ -87,7 +77,7 @@ body {
     grid-template-columns: repeat(2, auto);
     grid-gap: 12px;
 
-    opacity: 0;
+    opacity: 1;
     transform: translateY(50px);
     /* transition: .8s cubic-bezier(0.2, 0.8, 0.2, 1); */
 }
@@ -109,15 +99,15 @@ body {
     color: black;
 }
 
-.WechatRecordGroup .wechat-record-container .zz {
+.WechatRecordGroup .wechat-record-container .left-person {
     margin: 10px 0 10px 12px;
 }
 
-.WechatRecordGroup .wechat-record-container .zz .bubble {
+.WechatRecordGroup .wechat-record-container .left-person .bubble {
     background: rgb(254,255,255);
     position: relative;
 }
-.WechatRecordGroup .wechat-record-container .zz .bubble:before {
+.WechatRecordGroup .wechat-record-container .left-person .bubble:before {
     content: '';
     width: 0;
     height: 0;
@@ -129,15 +119,15 @@ body {
     font-size: 0;
 }
 
-.WechatRecordGroup .wechat-record-container .yoyo {
+.WechatRecordGroup .wechat-record-container .right-person {
     margin: 10px 12px 10px auto;
 }
 
-.WechatRecordGroup .wechat-record-container .yoyo .bubble {
+.WechatRecordGroup .wechat-record-container .right-person .bubble {
     background: rgb(146,235,105);
     position: relative;
 }
-.WechatRecordGroup .wechat-record-container .yoyo .bubble:after {
+.WechatRecordGroup .wechat-record-container .right-person .bubble:after {
     content: '';
     width: 0;
     height: 0;
