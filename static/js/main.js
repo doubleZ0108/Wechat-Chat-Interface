@@ -1,30 +1,38 @@
+var testData = {
+    leftPrefix: "[left-person]",
+    rightPrefix: "[right-person]",
+    recordGroup: [
+        {
+            time: "2020年8月11日",
+            records: [
+                "[left-person]hello",
+                "[right-person]world",
+                "[left-person]你好",
+                "[right-person]我来测试一下如果我发了很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长的一段话会是什么效果"
+            ]
+        },
+        {
+            time: "2020年8月11日",
+            records: [
+                "[left-person]hello",
+                "[right-person]world",
+                "[left-person]你好",
+                "[right-person]我来测试一下如果我发了很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长的一段话会是什么效果"
+            ]
+        },
+        {
+            time: "2020年8月11日",
+            records: [
+                "[left-person]hello",
+                "[right-person]world",
+                "[left-person]你好",
+                "[right-person]我来测试一下如果我发了很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长的一段话会是什么效果"
+            ]
+        }
+    ]
+};
+
 window.onload = function(){
-
-    var testData = {
-        leftPrefix: "[left-person]",
-        rightPrefix: "[right-person]",
-        recordGroup: [
-            {
-                time: "2020年8月11日",
-                records: [
-                    "[left-person]hello",
-                    "[right-person]world",
-                    "[left-person]你好",
-                    "[right-person]我来测试一下如果我发了很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长的一段话会是什么效果"
-                ]
-            },
-            {
-                time: "2020年8月11日",
-                records: [
-                    "[left-person]hello",
-                    "[right-person]world",
-                    "[left-person]你好",
-                    "[right-person]我来测试一下如果我发了很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长的一段话会是什么效果"
-                ]
-            }
-        ]
-    }
-
     handleWechatRecordContent(testData);
     handleIntersectionObserver();
 };
