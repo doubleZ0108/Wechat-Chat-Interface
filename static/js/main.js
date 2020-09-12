@@ -60,6 +60,7 @@ function handleWechatRecordContent(data) {
             avatarImg.classList.add("avatar");
             avatarImg.src = record.who=="left-person" ? leftPersonAvatar : rightPersonAvatar;
             avatarImg.alt = record.who=="left-person" ? "left person avatar" : "right person avatar";
+            avatarImg.draggable = false;
 
             var bubbleDiv = document.createElement("div");
             bubbleDiv.classList.add("bubble");
