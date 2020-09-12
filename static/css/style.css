@@ -34,6 +34,7 @@ body {
     height: 8.47%;
     z-index: 2;
     text-align: center;
+    font-size: 1.3rem;
 
     background-color: rgba(236,237,238, 0.8);
     backdrop-filter: blur(10px);
@@ -68,7 +69,7 @@ body {
 
 .WechatRecordGroup .wechat-record-container .time {
     text-align: center;
-    font-size: .6rem;
+    font-size: 0.05rem;
     color: rgba(0,0,0,.3);
     letter-spacing: .15rem;
     margin: 15px auto;
@@ -99,7 +100,7 @@ body {
 .WechatRecordGroup .wechat-record-container .bubble {
     word-break: break-all;
     border-radius: 7px;
-    font-size: .8rem;
+    font-size: 1.3rem;
     padding: 10px;
     color: black;
 }
@@ -153,6 +154,10 @@ body {
 
 
 @media (prefers-color-scheme: dark) {
+    body {
+        background-color: rgb(14,14,15);
+    }
+
     .WechatRecordGroup .name {
         color: rgb(195,196,198);
         background-color: rgba(14,14,15,0.8);
@@ -198,7 +203,7 @@ body {
     }
 
     .WechatRecordGroup .wechat-record-container .left-person .bubble {
-        color: rgb(19, 20, 21)
+        color: rgb(19, 20, 21);
         background: rgb(253,255,255);
     }
     .WechatRecordGroup .wechat-record-container .left-person .bubble:before {

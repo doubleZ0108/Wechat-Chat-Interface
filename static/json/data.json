@@ -1,0 +1,38 @@
+{
+    "leftPrefix": "[left-person]",
+    "rightPrefix": "[right-person]",
+    "recordGroup": [
+        {
+            "time": "2020年8月11日",
+            "records": [
+                "[left-person]hello",
+                "[right-person]world",
+                "[left-person]你好呀，你是？",
+                "[right-person]这里是doubleZ，一个热爱前端技术的小伙子，现在就读于同济大学软件学院",
+                "[right-person]我的📮是dbzdbz@tongji.edu.cn",
+                "[right-person]个人网站🌐www.doublez.site"
+            ]
+        },
+        {
+            "time": "2020年8月15日",
+            "records": [
+                "[left-person]听说这是基于原生css和js实现的，并且自动适应了浅色模式和深色模式",
+                "[right-person]是的，是按照手机微信的截图进行的复刻，由于水平有限可能模仿不是很一致，但是颜色和布局尽量用取色和标尺贴近～"
+            ]
+        },
+        {
+            "time": "2020年8月23日",
+            "records": [
+                "[left-person]除此之外还有其他和原版微信不同的地方吗？",
+                "[right-person]通过IntersectionObserver增添了一些气泡的浮入特效，看上去更加灵动"
+            ]
+        },
+        {
+            "time": "2020年9月12日",
+            "records": [
+                "[left-person]那我该如何在我的项目中使用呢？",
+                "[right-person]由于时间和水平有限，现在只有基于原生前端框架的版本，只需要进行如下配置: 🔵替换img文件夹下两个头像图片 🟣编写一个json格式的聊天文件[详见README.md] 🟡如果需要修改手机尺寸，理论上只需要修改最上层div.WechatRecordGroup的尺寸，其他大小可以进行大致的自适应(但很不推荐，并没有非常关注自适应)"
+            ]
+        }
+    ]
+}
